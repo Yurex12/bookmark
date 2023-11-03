@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="no-scrollbar">
+    <!-- header -->
+    <header class="bg-white shadow-md w-full fixed top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center py-5">
+        <!-- logo -->
+        <a href="#">
+          <img src="../images/logo-bookmark.svg" alt="" id="logo"/>
+        </a>
+
+        <!-- nav -->
+        <nav
+          class="block px-7 fixed h-full w-full left-0 bg-veryDarkBlue bg-opacity-95 md:px-0 md:flex md:relative md:left-auto md:h-auto md:w-auto md:top-0 md:bg-transparent"
+          id="nav"
+        >
+          <!-- mobile nav header -->
+          <div
+            class="flex items-center justify-between py-7 border-b-2 md:hidden"
+          >
+            <img src="../images/logo-footer.svg" alt="" />
+
+            <!--close button menu -->
+            <div class="block md:hidden">
+              <img src="../images/icon-close.svg" id="close-btn" alt="" />
+            </div>
+          </div>
+
+          <ul class="flex flex-col md:space-x-10 md:flex-row tracking-widest">
+            <li class="border-b-2 md:border-b-0">
+              <a
+                href="#"
+                class="uppercase text-white block py-4 text-center hover:text-softRed md:inline md:text-grayishBlue md:text-sm"
+                id="link"
+                >features</a
+              >
+            </li>
+            <li class="border-b-2 md:border-b-0">
+              <a
+                href="#"
+                class="uppercase text-white block py-4 text-center hover:text-softRed md:inline md:text-grayishBlue md:text-sm"
+                id="link"
+                >pricing</a
+              >
+            </li>
+            <li class="border-b-2 md:border-b-0">
+              <a
+                href="#"
+                class="uppercase text-white block py-4 text-center hover:text-softRed md:inline md:text-grayishBlue md:text-sm"
+                id="link"
+                >contact</a
+              >
+            </li>
+            <li class="border rounded-md mt-10 md:border-0 md:mt-0">
+              <a
+                href="#"
+                class="uppercase block text-center bg-transparent md:border md:border-softRed bg-softRed py-2 px-6 shadow-sm rounded-md text-white md:hover:bg-white hover:text-softRed md:hover:border-softRed md:text-sm md:inline md:bg-softRed"
+                id="link"
+                >login</a
+              >
+            </li>
+          </ul>
+
+          <!-- mobile nav footer -->
+          <ul
+            class="absolute mx-auto bottom-0 w-full flex items-center justify-center mb-5 gap-x-10 md:hidden"
+          >
+            <li>
+              <a href="#" id="link"
+                ><img src="../images/icon-facebook.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" id="link"
+                ><img src="../images/icon-twitter.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu -->
+        <div class="block md:hidden">
+          <img src="../images/icon-hamburger.svg" id="open-btn" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- hero -->
+    <section id="hero" class="mt-24 relative md:mt-32">
+      <div
+        class="container mx-auto items-center space-x-10 justify-around flex flex-col-reverse md:flex-row md:space-x-0"
+        data-container
+      >
+        <!-- left item -->
+        <div class="space-y-8 md:basis-1/2">
+          <h1
+            class="text-3xl capitalize text-center font-[500] text-veryDarkBlue max-w-sm md:text-left"
+          >
+            a simple bookmark manager
+          </h1>
+          <p class="max-w-sm text-center text-grayishBlue md:text-left">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="flex space-x-4 justify-center md:justify-start">
+            <a
+              href="#"
+              class="py-3 px-4 text-center text-white border border-softBlue rounded-md bg-softBlue shadow-sm hover:bg-white hover:text-softBlue"
+              >Get it on Chrome</a
+            >
+            <a
+              href="#"
+              class="py-3 px-4 text-center bg-gray-100 border shadow-md text-[#202124] rounded-md hover:border-[#202124]"
+              >Get it on Firefox</a
+            >
+          </div>
+        </div>
+        <!-- right item -->
+        <div class="md:basis-1/2 mb-10 md:mb-0">
+          <img src="../images/illustration-hero.svg" class="" alt="" />
+        </div>
+      </div>
+      <div
+        class="w-8/12 h-40 bg-softBlue sm:w-[270px] sm:h-60 top-20 md:top-36 rounded-l-full absolute bottom-3 right-0 -z-10 md:w-[300px] md:h-28 lg:w-[400px] lg:h-40 xl:w-[550px] xl:h-60"
+      ></div>
+    </section>
+
+    <!-- features container -->
+    <section id="features" class="relative">
+      <div class="container mx-auto mt-20 space-y-7">
+        <h1 class="text-[#202124] text-center text-3xl font-[500]">Features</h1>
+        <p class="mx-auto text-grayishBlue block text-center max-w-lg">
+          Our aim is to make it quick and easy for you access your favourite
+          websites. Your bookmark sync between your devices so you can access
+          them on the go.
+        </p>
+
+        <!-- features container -->
+        <div class="text-grayishBlue">
+          <nav class="flex flex-col justify-center md:flex-row">
+            <!-- item one -->
+            <div
+              class="flex justify-center border-b-2 border-t-2 md:border-t-0"
+            >
+              <button
+                class="px-8 py-4 border-b-4 border-white capitalize rounded-sm font-[500] hover:text-softRed"
+                data-features="0"
+              >
+                simple bookmarking
+              </button>
+            </div>
+            <!-- item two -->
+            <div class="flex justify-center border-b-2">
+              <button
+                class="px-8 py-4 border-b-4 border-white capitalize rounded-sm font-[500] hover:text-softRed"
+                data-features="1"
+              >
+                speedy searching
+              </button>
+            </div>
+            <!-- item three -->
+            <div class="flex justify-center border-b-2">
+              <button
+                class="px-8 py-4 border-b-4 border-white capitalize rounded-sm font-[500] hover:text-softRed"
+                data-features="2"
+              >
+                easy sharing
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- content -->
+    <section class="relative" id="content">
+      <div
+        class="container mt-16 mx-auto flex flex-col items-center md:space-x-5 space-y-20 md:space-y-0 md:justify-around md:flex-row"
+        data-features-container
+      >
+        <!-- item one -->
+        <div class="md:basis-1/2">
+          <img src="" alt="" data-image />
+        </div>
+        <!-- item two -->
+        <div class="space-y-5">
+          <h1
+            class="text-2xl text-veryDarkBlue font-[500] text-center md:text-left"
+            data-heading
+          ></h1>
+          <p
+            class="text-grayishBlue text-center md:text-left md:max-w-sm"
+            data-content
+          ></p>
+
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="px-3 py-2 border border-softBlue bg-softBlue text-white rounded-md hover:bg-white hover:text-softBlue"
+              >More info</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-8/12 h-40 bg-softBlue sm:w-[270px] sm:h-60 top-20 md:top-36 rounded-r-full absolute bottom-3 left-0 -z-10 md:w-[300px] md:h-28 lg:w-[400px] lg:h-40 xl:w-[550px] xl:h-60"
+      ></div>
+    </section>
+
+    <!-- extension -->
+    <section>
+      <div class="container mx-auto mt-16 md:mt-24">
+        <div>
+          <h1 class="text-2xl font-[500] text-center text-veryDarkBlue mb-5">
+            Download the extension
+          </h1>
+          <p class="mx-auto text-center text-grayishBlue max-w-md">
+            we've got more browsers in the pipeline. Please do let us know if
+            you've got a favourite you'd like us to prioritize.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col items-center space-y-7 mt-10 py-5 md:flex-row md:flex-wrap md:space-y-0 md:justify-center md:gap-10"
+        >
+          <!-- chrome -->
+          <div class="pb-4 shadow-md shadow-[#b1aeae] space-y-6 rounded-xl">
+            <img
+              src="../images/logo-chrome.svg"
+              class="block mx-auto mt-12 w-20"
+              alt=""
+            />
+            <!-- content -->
+            <div class="text-center">
+              <h6 class="font-[500]">Add to Chrome</h6>
+              <p class="text-grayishBlue text-[0.75rem]">Minimum version 62</p>
+            </div>
+
+            <img src="../images/bg-dots.svg" alt="" />
+
+            <button
+              class="bg-softBlue w-10/12 text-white p-3 py-2 block mx-auto rounded text-sm border border-softBlue text-[0.75rem] hover:bg-white hover:text-softBlue"
+            >
+              Add & install Extension
+            </button>
+          </div>
+          <!-- firefox -->
+          <div class="pb-4 shadow-md space-y-6 shadow-[#b1aeae] rounded-xl">
+            <img
+              src="../images/logo-firefox.svg"
+              class="block mx-auto mt-12 w-20"
+              alt=""
+            />
+            <!-- content -->
+            <div class="text-center">
+              <h6 class="font-[500]">Add to Firefox</h6>
+              <p class="text-grayishBlue text-[0.75rem]">Minimum version 55</p>
+            </div>
+
+            <img src="../images/bg-dots.svg" alt="" />
+
+            <button
+              class="bg-softBlue w-10/12 text-white p-3 py-2 block mx-auto rounded text-sm border border-softBlue text-[0.75rem] hover:bg-white hover:text-softBlue"
+            >
+              Add & install Extension
+            </button>
+          </div>
+          <!-- opera -->
+          <div class="pb-4 shadow-md shadow-[#b1aeae] space-y-6 rounded-xl">
+            <img
+              src="../images/logo-opera.svg"
+              class="block mx-auto mt-12 w-20"
+              alt=""
+            />
+            <!-- content -->
+            <div class="text-center">
+              <h6 class="font-[500]">Add to Opera</h6>
+              <p class="text-grayishBlue text-[0.75rem]">Minimum version 46</p>
+            </div>
+
+            <img src="../images/bg-dots.svg" alt="" />
+
+            <button
+              class="bg-softBlue w-10/12 text-white p-3 py-2 block mx-auto rounded text-sm border border-softBlue text-[0.75rem] hover:bg-white hover:text-softBlue"
+            >
+              Add & install Extension
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq -->
+    <section>
+      <div class="container mx-auto mt-20 space-y-5">
+        <h1
+          class="text-xl text-center font-[500] capitalize text-veryDarkBlue md:text-3xl"
+        >
+          frequently asked questions
+        </h1>
+        <p class="mx-auto text-center text-grayishBlue max-w-md">
+          Here are some of our FAQS. if you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+
+        <!-- questions container -->
+        <div class="max-w-md mx-auto">
+          <!-- question 1 -->
+          <div class="border-b-2">
+            <!-- header -->
+            <div
+              class="flex justify-between items-center py-3 text-[#202124] font-[400] hover:text-softRed"
+              id="faq-header"
+            >
+              <p class="px-1">What is Bookmark?</p>
+              <button
+                class="rotate-90 transition block duration-[0.5s] text-softBlue text-2xl"
+                id="faq-btn"
+              >
+                >
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="faq-body overflow-hidden transition-[max-height] duration-[1s]"
+              id="faq-ans"
+            >
+              <p class="text-grayishBlue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ne
+                tempore maxime esse rerum, fugit unde laborum praesentium,
+                itaque doloribus error nihil quo ducimus minus, accusamus fugiat
+                qui dolore placeat totam.
+              </p>
+            </div>
+          </div>
+          <!-- question 2 -->
+          <div class="border-b-2">
+            <!-- header -->
+            <div
+              class="flex justify-between items-center py-3 text-[#202124] font-[400] hover:text-softRed"
+              id="faq-header"
+            >
+              <p class="px-1">How can i request a new browser?</p>
+              <button
+                class="rotate-90 transition block duration-[0.5s] text-softBlue text-2xl"
+                id="faq-btn"
+              >
+                >
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="faq-body overflow-hidden transition-[max-height] duration-[1s]"
+              id="faq-ans"
+            >
+              <p class="text-grayishBlue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ne
+                tempore maxime esse rerum, fugit unde laborum praesentium,
+                itaque doloribus error nihil quo ducimus minus, accusamus fugiat
+                qui dolore placeat totam.
+              </p>
+            </div>
+          </div>
+          <!-- question 3 -->
+          <div class="border-b-2">
+            <!-- header -->
+            <div
+              class="flex justify-between items-center py-3 text-[#202124] font-[400] hover:text-softRed"
+              id="faq-header"
+            >
+              <p class="px-1">Is there a mobile app?</p>
+              <button
+                class="rotate-90 transition block duration-[0.5s] text-softBlue text-2xl"
+                id="faq-btn"
+              >
+                >
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="faq-body overflow-hidden transition-[max-height] duration-[1s]"
+              id="faq-ans"
+            >
+              <p class="text-grayishBlue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ne
+                tempore maxime esse rerum, fugit unde laborum praesentium,
+                itaque doloribus error nihil quo ducimus minus, accusamus fugiat
+                qui dolore placeat totam.
+              </p>
+            </div>
+          </div>
+          <!-- question 4 -->
+          <div class="border-b-2">
+            <!-- header -->
+            <div
+              class="flex justify-between items-center py-3 text-[#202124] font-[400] hover:text-softRed"
+              id="faq-header"
+            >
+              <p class="px-1">what about other Chromium browsers?</p>
+              <button
+                class="rotate-90 transition block duration-[0.5s] text-softBlue text-2xl"
+                id="faq-btn"
+              >
+                >
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="faq-body overflow-hidden transition-[max-height] duration-[1s]"
+              id="faq-ans"
+            >
+              <p class="text-grayishBlue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ne
+                tempore maxime esse rerum, fugit unde laborum praesentium,
+                itaque doloribus error nihil quo ducimus minus, accusamus fugiat
+                qui dolore placeat totam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <a
+            href="#"
+            class="px-3 py-2 bg-softBlue border border-softBlue text-white hover:bg-white hover:text-softBlue rounded-md"
+            >More info</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="bg-softBlue mt-20">
+      <div class="container mx-auto max-w-md py-16 px-4 text-white space-y-4">
+        <p class="uppercase text-center tracking-[0.15em] text-[.9rem]">
+          35,000+ already joined
+        </p>
+        <h1 class="text-center text-2xl max-w-[20rem] mx-auto">
+          Stay up-to-date with what we're doing
+        </h1>
+        <form
+          class="flex flex-col gap-y-4 md:flex-row md:justify-center md:space-x-3"
+        >
+          <input
+            type="email"
+            class="outline-none p-3 pl-5 rounded-md shadow-sm text-[#202124] placeholder:text-[0.75rem] md:flex-1"
+            placeholder="Enter your email address"
+          />
+          <button
+            class="bg-softRed outline-none p-3 rounded-md shadow-sm border border-softRed hover:bg-white hover:text-softRed md:text-[0.75rem]"
+          >
+            Contact Us
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-veryDarkBlue">
+      <div
+        class="container mx-auto flex flex-col items-center py-10 md:flex-row md:justify-between md:py-7"
+      >
+        <!-- item one -->
+        <div
+          class="flex flex-col items-center space-y-10 md:flex-row md:space-y-0 md:gap-x-8"
+        >
+          <img src="../images/logo-footer.svg" class="w-40" alt="" />
+
+          <ul
+            class="text-white flex flex-col gap-y-5 md:flex-row md:gap-x-7 md:text-[1rem]"
+          >
+            <li>
+              <a href="#" class="uppercase hover:text-softRed">features</a>
+            </li>
+            <li>
+              <a href="#" class="uppercase hover:text-softRed">pricing</a>
+            </li>
+            <li>
+              <a href="#" class="uppercase hover:text-softRed">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- item two -->
+        <ul class="flex items-center justify-center mt-10 md:mt-0 gap-x-10">
+          <li>
+            <a href="#"><img src="../images/icon-facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../images/icon-twitter.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

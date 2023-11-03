@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body {
+  @apply font-[1.125rem] font-body;
+}
+
+.container {
+  @apply w-11/12;
+}
+
+#nav {
+  @apply -top-full transition-[top] duration-[.5s];
+
+}
+#nav.active {
+  @apply top-0;
+}
+
+.active {
+  @apply border-b-softRed text-[#202124];
+}
+.faq-body {
+  @apply max-h-0;
+}
+.faq-active + .faq-body {
+  @apply max-h-32;
+}
+.faq-active > #faq-btn {
+  @apply -rotate-90 text-softRed;
+}
