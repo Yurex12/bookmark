@@ -3,19 +3,19 @@ const featuresData = [
     title: 'Bookmark in one click',
     content:
       'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.',
-    imageUrl: '../images/illustration-features-tab-1.svg',
+    imageUrl: 'images/illustration-features-tab-1.svg',
   },
   {
     title: 'Intelligent search',
     content:
       'Our powerfuk search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.',
-    imageUrl: '../images/illustration-features-tab-2.svg',
+    imageUrl: 'images/illustration-features-tab-2.svg',
   },
   {
     title: 'Share your bookmarks',
     content:
       'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.',
-    imageUrl: '../images/illustration-features-tab-3.svg',
+    imageUrl: 'images/illustration-features-tab-3.svg',
   },
 ];
 const dataContainer = document.querySelector('[data-features-container]');
