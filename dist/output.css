@@ -875,6 +875,10 @@ video {
   height: 11rem;
 }
 
+.h-5{
+  height: 1.25rem;
+}
+
 .w-10\/12{
   width: 83.333333%;
 }
@@ -2191,6 +2195,10 @@ video {
 
 .pl-5{
   padding-left: 1.25rem;
+}
+
+.pb-1{
+  padding-bottom: 0.25rem;
 }
 
 .text-left{
